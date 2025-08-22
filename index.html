@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visiting Card - Diptesh Saha</title>
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #e63946 30%, #ffffff 30%);
+      background-size: cover;
+    }
+
+    .card {
+      background: #fff;
+      width: 390px;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Decorative stripes */
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 150px;
+      height: 150px;
+      background: rgba(230,57,70,0.2);
+      border-radius: 50%;
+    }
+    .card::after {
+      content: '';
+      position: absolute;
+      bottom: -40px;
+      left: -40px;
+      width: 120px;
+      height: 120px;
+      background: rgba(230,57,70,0.15);
+      border-radius: 50%;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #e63946;
+    }
+
+    .name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #e63946;
+    }
+
+    .designation {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .contact {
+      text-align: left;
+      font-size: 0.9rem;
+      margin-top: 15px;
+    }
+
+    .contact a {
+      display: block;
+      text-decoration: none;
+      color: #e63946;
+      margin: 6px 0;
+      transition: all 0.3s ease;
+      font-weight: 600;
+    }
+
+    .contact a:hover {
+      color: #b5171e;
+      transform: translateX(4px);
+    }
+
+    .website {
+      margin-top: 15px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .website a {
+      text-decoration: none;
+      color: #fff;
+      background: #e63946;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .website a:hover {
+      background: #b5171e;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="your-image.jpg" alt="Profile Image" class="profile-img">
+
+    <div class="name">Diptesh Saha, CISSP | CISM</div>
+    <div class="designation">CISO & Practice Head</div>
+
+    <div class="contact">
+      <a href="mailto:diptesh.s@snsin.com">📧 diptesh.s@snsin.com</a>
+      <a href="tel:+914428221642">☎️ +91 44 2822 1642 / 43</a>
+      <a href="tel:+919380680537">📱 9380680537 / 7338882888</a>
+    </div>
+
+    <div class="website">
+      <a href="https://www.snsin.com" target="_blank">🌐 www.snsin.com</a>
+    </div>
+  </div>
+</body>
+</html>
